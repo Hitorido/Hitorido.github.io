@@ -1,38 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #f5f6f8;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
   color: #222;
-  line-height: 1.6;
 }
 
+/* Container */
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 20px;
 }
 
-header {
-  background: #2b1e16;
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #2b1e16, #6f4e37);
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
-header h1 {
+.hero h1 {
+  font-size: 42px;
   margin: 0;
-  font-size: 36px;
 }
 
-header p {
-  margin: 8px 0;
+.hero p {
+  margin: 10px 0 20px;
 }
 
 .links a {
-  color: #ffcc99;
-  margin: 0 10px;
+  color: #ffd9b3;
+  margin: 0 12px;
   text-decoration: none;
   font-weight: 600;
 }
@@ -41,36 +46,72 @@ header p {
   text-decoration: underline;
 }
 
-h2 {
-  margin-top: 40px;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
+/* ABOUT */
+.about {
+  background: #ffffff;
+  padding: 60px 20px;
 }
 
 .card {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
 }
 
-.project h3 {
-  margin-top: 0;
+/* PROJECTS SECTION */
+.projects {
+  background: #efe7e1;
+  padding: 60px 20px;
 }
 
-.project a {
-  color: #2b1e16;
-  font-weight: 600;
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 20px;
+}
+
+.project-card {
+  padding: 25px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Coffee themed card */
+.project-card.coffee {
+  background: linear-gradient(135deg, #6f4e37, #b07d62);
+}
+
+/* Web themed card */
+.project-card.web {
+  background: linear-gradient(135deg, #243b55, #141e30);
+}
+
+.project-card a {
+  color: #ffe6cc;
   text-decoration: none;
+  font-weight: 600;
 }
 
-.project a:hover {
+.project-card a:hover {
   text-decoration: underline;
 }
 
+/* FOOTER */
 footer {
+  background: #2b1e16;
+  color: #eee;
   text-align: center;
-  padding: 30px;
-  color: #666;
+  padding: 20px;
 }
