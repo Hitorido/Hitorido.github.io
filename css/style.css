@@ -1,49 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  background: #ffffff;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f5f6f8;
   color: #222;
   line-height: 1.6;
 }
 
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
 header {
+  background: #2b1e16;
+  color: white;
   text-align: center;
-  margin-bottom: 40px;
+  padding: 60px 20px;
 }
 
-h1 {
-  margin-bottom: 5px;
+header h1 {
+  margin: 0;
+  font-size: 36px;
 }
 
-h2 {
-  border-bottom: 2px solid #333;
-  padding-bottom: 5px;
+header p {
+  margin: 8px 0;
 }
 
-.project {
-  margin-top: 25px;
-  margin-bottom: 35px;
-}
-
-a {
-  color: #0066cc;
+.links a {
+  color: #ffcc99;
+  margin: 0 10px;
   text-decoration: none;
+  font-weight: 600;
 }
 
-a:hover {
+.links a:hover {
   text-decoration: underline;
 }
 
-img {
-  margin-top: 10px;
-  max-width: 400px;
-  width: 100%;
-  border-radius: 8px;
+h2 {
+  margin-top: 40px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project a {
+  color: #2b1e16;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
 }
 
 footer {
   text-align: center;
-  margin-top: 40px;
-  font-size: 14px;
-  color: #555;
+  padding: 30px;
+  color: #666;
 }
