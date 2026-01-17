@@ -5,70 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gemver Harry Santos | Portfolio</title>
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
-<!-- HERO SECTION -->
-<header class="hero">
+<!-- HERO -->
+<header class="hero reveal">
   <div class="container">
     <h1>Gemver Harry Santos</h1>
     <p>BS Information Systems (System Analytics) – 2nd Year Student</p>
+
     <div class="links">
-      <a href="mailto:gemverharry@gmail.com">Email</a>
-      <a href="https://github.com/Hitorido" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/gemver-harry-santos-49845035a" target="_blank">LinkedIn</a>
+      <a href="mailto:gemverharry@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="https://github.com/Hitorido" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/gemver-harry-santos-49845035a" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
     </div>
+
+    <a class="cv-btn" href="files/GemverHarrySantos_CV.pdf" download>
+      <i class="fa-solid fa-file-arrow-down"></i> Download CV
+    </a>
   </div>
 </header>
 
-<!-- ABOUT SECTION -->
-<section class="about">
+<!-- ABOUT -->
+<section class="about reveal">
   <div class="container card">
     <h2>About Me</h2>
     <p>
-      I am a second-year BS Information Systems student majoring in System Analytics.
-      I build mobile applications and websites using Flutter, Firebase/Supabase,
-      JavaScript, and Python. I use AI tools like GitHub Copilot and ChatGPT
-      to improve code quality and development speed.
+      I am a BS Information Systems student majoring in System Analytics.
+      I build mobile apps and websites using Flutter, Firebase/Supabase,
+      JavaScript, and Python. I use AI tools like Copilot and ChatGPT
+      to develop faster and smarter solutions.
     </p>
   </div>
 </section>
 
-<!-- PROJECTS SECTION -->
+<!-- PROJECTS -->
 <section class="projects">
   <div class="container">
-    <h2>Projects</h2>
+    <h2 class="reveal">Projects</h2>
 
-    <div class="project-grid">
+    <!-- Coffee App -->
+    <div class="project-card coffee reveal">
 
-      <div class="project-card coffee">
+      <div class="slider" data-slider="coffee">
+        <div class="slides">
+          <img src="images/coffee1.png">
+          <img src="images/coffee2.png">
+          <img src="images/coffee3.png">
+        </div>
+
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+        <div class="dots"></div>
+      </div>
+
+      <div class="project-text">
         <h3>☕ Coffee Ordering Mobile App</h3>
-        <p>
-          A full-featured mobile app for browsing coffee products,
-          placing orders, and tracking status in real time.
-        </p>
+        <p>Full-featured mobile ordering system with real-time tracking.</p>
         <p><strong>Tech:</strong> Flutter, Firebase, Supabase</p>
         <a href="https://github.com/Hitorido" target="_blank">View on GitHub →</a>
       </div>
+    </div>
 
-      <div class="project-card web">
+    <!-- Web Projects -->
+    <div class="project-card web reveal">
+
+      <div class="slider" data-slider="web">
+        <div class="slides">
+          <img src="images/web1.png">
+          <img src="images/web2.png">
+          <img src="images/web3.png">
+        </div>
+
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+        <div class="dots"></div>
+      </div>
+
+      <div class="project-text">
         <h3>💻 Web Development Projects</h3>
-        <p>
-          Interactive and responsive websites built with
-          HTML, CSS, and JavaScript.
-        </p>
+        <p>Interactive modern websites with clean UI design.</p>
         <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
         <a href="https://github.com/Hitorido" target="_blank">View on GitHub →</a>
       </div>
-
     </div>
+
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p>© 2026 Gemver Harry Santos</p>
 </footer>
 
+<script src="js/slider.js"></script>
 </body>
 </html>
